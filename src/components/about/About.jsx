@@ -7,7 +7,7 @@ export default function About() {
         <div className="about" id="about">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="/assets/image.png" alt=""/>
+                    <img src="/me/assets/image.png" alt=""/>
                 </div>
             </div>
             <div className="right">
