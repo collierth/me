@@ -24,7 +24,7 @@ export default function Contact() {
             </div>
             <div className="right">
                 <div className="imgContainer">
-                    <img src="me/assets/wave.png" alt=""/>
+                    <img src="/me/assets/wave.png" alt=""/>
                 </div>
             </div>
         </div>
