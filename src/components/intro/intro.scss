@@ -1,0 +1,41 @@
+.intro {
+    color: white;
+    display: flex;
+  
+    background-color: #7dabff;
+  
+    .wrapper {
+        margin: auto;
+        font-size: 30px;
+        font-weight: 700;
+
+        .btn {
+            transition: all .5s ease-in-out;
+            background-color: transparent;
+            color: white;
+            width: 100px;
+            height: 40px;
+            border-color: white;
+            cursor: pointer;
+            text-decoration: none;
+            border: 1px solid;
+            overflow: hidden;
+            position: relative;
+            outline: none;
+            border-radius: 30px;
+
+            &:hover {
+                background-color: #fff;
+                color: black;
+                outline: none;
+                border-color: white;
+                width: 150px;
+                font-weight: 500;
+                letter-spacing: 1px;
+              }
+        }
+
+
+      }
+  
+}

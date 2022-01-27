@@ -1,0 +1,48 @@
+@import "global.scss";
+
+.app {
+    height: 100vh;
+    
+    .sections {
+        width: 100%;
+        height: calc(100vh - 70px); //0px 70px
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px; //comment out
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+
+        /*scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar {
+            display: none;
+        }*/
+
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: white;
+            box-shadow: inset 0 0 5px grey;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(100, 100, 100);
+            border-radius: 10px;
+            width: 10px;
+        }
+
+        @include mobile {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+
+        > * {
+            width: 100vw;
+            height: calc(100vh - 70px); //0px 70px
+            scroll-snap-align: start;
+        }
+    }
+}

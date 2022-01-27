@@ -1,0 +1,83 @@
+@import "../../global.scss";
+
+.skills {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h1 {
+        font-size: 50px;
+        font-weight: 300;
+        overflow: hidden;
+
+        @include mobile {
+            font-size: 20px;
+            margin-top: 10px;
+            height: 30px;
+        }
+        //background-color: red;
+
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 200; 
+        overflow: hidden;
+
+        @include mobile {
+            display: none;
+        }
+        //background-color: blue;
+     }
+
+    .container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        min-height: 100px;
+        padding: 50px 50px;
+        //background-color: green;
+
+        @include mobile {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .item {
+            width: 120px;
+            height: 80px;
+            border-radius: 20px;
+            margin: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            background-color: lightgray;
+            overflow: hidden;
+            transition: all 0.7s ease-in-out;
+            //background-color: yellow;
+
+            @include mobile {
+                width: 90px;
+                height: 70px;
+            }
+
+            h3 {
+                position: absolute;
+                font-size: 17px;
+                color: rgb(80, 79, 79);
+
+                @include mobile {
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}

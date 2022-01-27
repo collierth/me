@@ -1,0 +1,83 @@
+@import "../../global.scss";
+
+.hobbies {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .left {
+        flex: 0.5;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            display: none;
+        }
+
+        span {
+            border: none;
+            cursor: pointer;
+            width: 125px;
+            height: 125px;
+            border-radius: 30px;
+            margin-left: 300px;
+            margin-bottom: 30px;
+            transition: all 1s ease-in-out;
+            //padding-bottom: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            background-color: #7dabff;
+    
+            .icon {
+                color: white; 
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+    }
+
+    .right {
+        flex: 0.5;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            flex: 1;
+            padding: 5px 5px;
+            margin-bottom: 350px;
+            max-width: fit-content;
+        }
+
+        h1 {
+        
+            font-size: 50px;
+            font-weight: 300;
+        }
+
+        h2 {
+
+            @include mobile {
+                margin-top: 20px;
+                max-width: 100%;
+            }
+            display: flex;
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 600px;
+        }
+    }
+ 
+
+    
+}
